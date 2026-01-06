@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search & Filter Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Search & Filter Engine</h1>
+
+  <input type="text" id="search" placeholder="Search..." onkeyup="render()">
+
+  <select id="filter" onchange="render()">
+    <option value="all">All</option>
+    <option value="active">Active</option>
+    <option value="archived">Archived</option>
+  </select>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
